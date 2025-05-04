@@ -10,6 +10,7 @@
     {{!-- Preload main styles and scripts for better performance --}}
     <link rel="preload" as="style" href="{{asset "built/screen.css"}}">
     <link rel="preload" as="script" href="{{asset "built/source.js"}}">
+    <link rel="stylesheet" href="{{asset "css/ghost-dynamic-dropdown.css"}}">
     
     {{!-- Fonts are preloaded and defined in the default template to avoid layout shift --}}
     {{> "typography/fonts"}}
@@ -65,7 +66,8 @@
 
 {{!-- Scripts - handle responsive videos, infinite scroll, and navigation dropdowns --}}
 <script src="{{asset "built/source.js"}}"></script>
-
+<script src="{{asset "js/ghost-dynamic-dropdown.js"}}"></script>
+    
 {{!-- Ghost outputs required functional scripts with this tag, it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
 
